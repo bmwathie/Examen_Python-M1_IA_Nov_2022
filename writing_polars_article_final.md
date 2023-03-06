@@ -32,7 +32,32 @@ df = pl.DataFrame(
 )
 df  
 ```
-![output](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/Capture%20d%E2%80%99%C3%A9cran%20du%202023-03-06%2016-37-06.png?raw=true)
+![output](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/Capture%20d%E2%80%99%C3%A9cran%20du%202023-03-06%2016-37-06.png?raw=true "output")  
+Polars expects the column header names to be of string type. Consider the following example:  
+```python
+df2 = pl.DataFrame(
+    {
+        0 : [1,2,3],
+        1 : [80,170,130],
+    }
+)
+```
+The above code snippet won't work as the keys in the dictionary are of type integer (0 and 1). To make it work, you need to make sure the keys are of string type (“0” and “1”):  
+```python
+df2 = pl.DataFrame(
+    {
+        "0" : [1,2,3],
+        "1" : [80,170,130],
+    }
+)
+```  
+Besides displaying the header name for each column, Polars also displays the data type of each column. If you want to explicitly display the data type of each column, use the dtypes properties:  
+```python
+df.dtypes
+```  
+
+
+
 
 
 

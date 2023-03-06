@@ -9,3 +9,4 @@ df = pl.DataFrame(
     }
 )
 print(df) 
+print(df.dtypes)
