@@ -55,7 +55,7 @@ Besides displaying the header name for each column, Polars also displays the dat
 ```python
 df.dtypes
 ```  
-
+![output_dtypes](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/Capture%20d%E2%80%99%C3%A9cran%20du%202023-03-06%2017-50-26.png?raw=true "output_dtypes")
 
 
 
