@@ -32,7 +32,7 @@ df = pl.DataFrame(
 )
 df  
 ```
-
+![output](https://www.dropbox.com/s/s28a9vnthvcaa91/photo_2023-02-20_18-44-31.jpg?dl=0)
 
 
 
