@@ -16,6 +16,7 @@
     * **4. Filtration**
     * **5. Ploting with polars**
     * **6. Time to go Lazy**
+    * **Output**
 - **Out of Core (NEW)**
 - **Conclusion**
 ## **Introduction**
@@ -394,7 +395,7 @@ shape: (123149, 4)
 >>> plt.ylabel('Average points')
 >>> plt.show()
 ```
-![fig_courbe]()
+![fig_courbe](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/tracer.png)
 ### **6. Time to go Lazy**
 The lazy API offers a way to optimise your queries, similar to Spark. The major benefit over spark is that we don’t have to set up our environment and can therefore continue working from our notebook.  
 ```python
@@ -403,7 +404,7 @@ The lazy API offers a way to optimise your queries, similar to Spark. The major 
 >>> lazy_df
 <polars.LazyFrame object at 0x7F80047471C0>
 ```
-![lazyframe1]()  
+![lazyframe1](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/lazyframe1.png)  
 Printing the type returns ‘polars.lazy.LazyFrame’ indicating the data is available to us. On to the Groupby `country` and find the average `points` to compare with the eager API that we used earlier.
 
 Similar to the filters that we did with the eager API we are going to filter the unknown and ‘US-France’ values in the `country` variable first.
@@ -411,7 +412,7 @@ Similar to the filters that we did with the eager API we are going to filter the
 >>> lazy_df.filter((pl.col('country').is_not_null()) & (pl.col('country') != 'US-France'))
 <polars.LazyFrame object at 0x7F80047472B0>
 ```
-![lazyframe]()  
+![lazyframe](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/lazyframe.png)  
 We can see that the query is almost the same, however this query only returns a query plan.
 
 As we can see nothing happens right away. From the documentation: ‘This is due to the lazyness, nothing will happen until specifically requested. This allows Polars to see the whole context of a query and optimize just in time for execution.’
