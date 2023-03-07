@@ -1,4 +1,4 @@
-# **Introduction to Pandas**
+# **Introduction to Polars**
  One of the fastest Dataframe library at the moment.  
 ![Polars](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/t%C3%A9l%C3%A9chargement.png?raw=true "Polars") 
 # **Contents**
