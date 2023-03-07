@@ -1,6 +1,6 @@
 # **Introduction to Pandas**
  One of the fastest Dataframe library at the moment.  
-![Polars](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/t%C3%A9l%C3%A9chargement.png?raw=true "Polars")
+![Polars](https://github.com/bmwathie/Examen_Python-M1_IA_Nov_2022/blob/main/img/t%C3%A9l%C3%A9chargement.png?raw=true "Polars") 
 # **Contents**
 - **Introduction**
 - **Concept**
@@ -19,6 +19,7 @@
     * **Output**
 - **Out of Core (NEW)**
 - **Conclusion**
+- **List of consulted resources**
 ## **Introduction**
 **Polars** library is a ast in-memory tabular data processing library designed to be used in conjunction with Python. It was developed to offer high performance and advanced features for processing large-scale data. In this presentation, we will review the fundamental concepts of Polars, as well as practical examples, potential alternatives, and use cases.
 ## **Concept**
@@ -582,3 +583,17 @@ lazy_df.collect().write_csv('results.csv')
 ```
 ## **Conclusion**
 **Polars** offers almost all the functions that we need to manipulate our dataframe. Next to that, it offers a lazy API that helps us optimising our queries before we execute them. Although we didn’t touch it is in this article, the benchmark of H20 shows that it is super efficient and fast. Especially with larger datasets it becomes worthwhile to look into the benefits that the lazy API has to offer.
+## **List of consulted resources**  
+* https://pola-rs.github.io/polars-book/user-guide/introduction.html  
+* https://www.codemag.com/Article/2212051/Using-the-Polars-DataFrame-Library  
+* https://pola-rs.github.io/polars/py-polars/html/reference/dataframe/index.html  
+* https://www.notion.so/fr-fr/help/customize-and-style-your-content  
+* https://blent.ai/git-tutoriel-complet/  
+* https://github.com/pola-rs/polars  
+* https://levelup.gitconnected.com/plodding-with-polars-in-python-defe8399eee6  
+* https://r-brink.medium.com/introduction-to-polars-ee9e638dc163  
+* https://www.kaggle.com/datasets/zynicide/wine-reviews?resource=download  
+* https://r-brink.medium.com/2023-update-introduction-to-polars-c9250937604e  
+* https://thinkr.fr/r-markdown-les-petits-trucs-qui-changent-la-vie/#:~:text=Faire%20un%20saut%20de%20ligne,-Pour%20faire%20un&text=%2D%2D%202%20espaces%20%C3%A0%20la%20fin,pas%20%C3%A0%20la%20ligne%20suivante.  
+* https://nskm.xyz/assets/09-pandas.pdf  
+* https://pola-rs.github.io/polars/py-polars/html/reference/lazyframe/index.html  
